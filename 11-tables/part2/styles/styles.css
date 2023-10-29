@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    width: 800px;
+    margin: 0 auto;
+}
+
+tr:first-child {
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+caption {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,86 @@
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: rgb(25, 157, 34);
+    text-decoration: none;
+}
+
+/*исключение по классу*/
+a:not(.bing) {
+    color: rgb(43, 72, 125);
+}
+
+/*исключение по атрибуту в квадратных скобках*/
+a:not([target]) {
+    color: brown;
+}
+
+/*стилизация по атрибуту
+так можно подставить иконки соцсетей*/
+a[href="http://yandex.ru"] {
+    text-transform: uppercase;
+}
+
+a::before {
+    content: '\1F582';
+}
+
+a::after {
+    content: '>';
+    margin-left: 3px;
+}
+
+a::selection,
+.links::selection {
+    background-color: bisque;
+    color: brown;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid salmon;
+    outline: none;
+    /*при редактированни граница инпута не выделяется*/
+}
+
+input:focus {
+    border-bottom: 1px solid black;
+}
+
+.products {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+}
+
+.product__item {
+    width: 280px;
+    height: 180px;
+    background-color: cornflowerblue;
+    margin: 20px 20px 0px 0px;
+}
+
+.product__item:first-of-type {
+    background-color: gray;
+}
+
+/*не работает из-за <p>, нужно использовать -of-type*/
+.product__item:last-child {
+    background-color: rgb(130, 1, 1);
+}
+
+.product__item:nth-child(-n+3) {
+    margin-top: 0;
+}
+
+.product__item:nth-child(3n) {
+    margin-right: 0;
+}

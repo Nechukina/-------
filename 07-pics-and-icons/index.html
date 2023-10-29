@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc8d5e1e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Pictures and icons</title>
+</head>
+
+<body>
+    <h1>Форматы изображений</h1>
+    <ul>
+        <li>JPG/JPEG</li>
+        <li>PNG</li>
+        <li>GIF</li>
+        <li>Webp</li>
+    </ul>
+
+    <picture class="pic">
+        <source type="image/webp" srcset="img/pic1.webp">
+        <source type="image/jpeg" srcset="img/pic1.jpg">
+        <img src="img/pic1.jpg" alt="css image">
+        <!-- если браузер поддерживает webp, то это самый легковесный и предпочтительный формат. дальше смотрит на другой source. если ни то , ни другое не подходит, то грузит как обычное img -->
+    </picture>
+
+    <picture class="pic">
+        <source media="(max-width: 500px)" srcset="img/cloud.png">
+        <source media="(max-width: 900px)" srcset="img/moon.png">
+        <img src="img/stars.png" alt="for biggest screens">
+        <!-- адаптивный вариант подгрузки картинок -->
+    </picture>
+
+    <div class="small-image">
+        <img src="img/tree.png" alt="image">
+    </div>
+    <div class="icons">
+        <i class="fa-solid fa-biohazard"></i>
+        <i class="fa-solid fa-capsules"></i>
+        <i class="fa-solid fa-bacteria"></i>
+    </div>
+</body>
+
+</html>

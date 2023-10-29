@@ -1,0 +1,48 @@
+/* подключение шрифтов из локальной папки для всех супер старых браузеров*/
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. 
+    Дескриптор font-display определяет то, как шрифт, подключённый через font face будет отображаться в зависимости от того, загрузился ли он и готов ли к использованию. 
+    swap: Для шрифта не задаётся период блокировки и задаётся бесконечный период подмены.*/
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../06-links/fonts/quicksand/quicksand-v31-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: url('../06-links/fonts/quicksand-v31-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../06-links/fonts/quicksand-v31-latin_latin-ext-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../06-links/fonts/quicksand-v31-latin_latin-ext-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../06-links/fonts/quicksand-v31-latin_latin-ext-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../06-links/fonts/quicksand-v31-latin_latin-ext-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: darkseagreen;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px 5px;
+    padding: 5px 8px;
+    border: 1px solid rgb(110, 148, 110);
+    font-size: 16px;
+    color: #000;
+    border-radius: 10px;
+    outline: none; /* чтобы не было границы у кнопки при клике/наведении */
+
+}
+
+.button:hover {
+    background-color: white;
+    color: darkgreen;
+}

@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    border: 3px solid green;
+
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    border: 3px solid green;
+}
+
+caption {
+    text-align: end;
+    font-size: 12px;
+}

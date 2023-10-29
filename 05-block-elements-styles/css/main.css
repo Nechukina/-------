@@ -1,0 +1,56 @@
+body {
+    background-image: url(../img/bg.png);
+    /* background-repeat: no-repeat ;
+    background-position: 100px 20px; */
+    margin: 0;
+}
+.product-item {
+    background-color: rgba(138, 107, 46, 0.6);
+    padding: 10px 15px;
+    margin: 0px 0px 10px;
+    /* outline: 1px solid brown;
+    border-radius: 50px 0px 0 0;
+    box-shadow: black 0px 0px 30px 0px; */
+    height: 100vh;
+}
+.product-item:first-child {
+    background: url(../img/ocean.jpg) no-repeat, url(../img/ocean.jpg) no-repeat;
+    background-size: 500px, 300px;
+    background-position: top center, bottom center;
+    background-color:  rgba(138, 107, 46, 0.3);
+}
+.product-item:nth-child(2) {
+    background: url(../img/plant.jpg) no-repeat;
+    color: aliceblue;
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed; /* прилепить фон при скролле*/
+}
+.product-item:nth-child(3) {
+    background: url(../img/lodka.jpg) no-repeat;
+    border: 20px double;
+    background-position: center left;
+    background-origin: border-box;
+    color: aliceblue;
+
+
+}
+.product-item:last-child {
+    background: url(../img/lodka.jpg) no-repeat, url(../img/ocean.jpg) no-repeat;
+    background-size: 1000px, 1000px;
+    background-position: left top, right bottom;
+    color: aliceblue;
+    background-blend-mode: overlay;
+}
+.product-item__title {
+    border: 1px solid rebeccapurple;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+
+.product-item__description {
+    border: 1px solid royalblue;
+}

@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+}
+
+.footer {
+    background-color: aquamarine;
+    height: 80px;
+}
+
+.footer::before {
+    content: '\00A9';
+}
+
+.header {
+    background-color: bisque;
+    height: 120px;
+}
+
+.menu {
+    background-color: cornsilk;
+    height: 30px;
+}
+
+.menu::after {
+    content: '\2630';
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+.vertical-sidebar {
+    background-color: deepskyblue;
+    width: 80px;
+}
+
+.widget {
+    background-color: cadetblue;
+    width: 200px;
+}
+
+.content {
+    height: calc(100vh - 230px);
+}
