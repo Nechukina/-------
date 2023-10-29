@@ -1,0 +1,54 @@
+body {
+    height: 1500px;
+}
+
+#parent {
+    width: 250px;
+    height: 200px;
+    background-color: greenyellow;
+    top: 50px;
+    left: 30px;
+    position: relative;
+}
+
+#parent::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 105px;
+    border: 20px solid;
+    border-color: transparent transparent black transparent;
+}
+
+#child {
+    height: 50px;
+    width: 50px;
+    background-color: #f87575;
+    position: absolute;
+    right: -50px;
+
+}
+
+.black {
+    background-color: #000;
+    color: aliceblue;
+    position: relative;
+}
+
+.fixed {
+    height: 100px;
+    width: 100px;
+    background-color: #f66ee8;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.sticky {
+    height: 100px;
+    width: 100px;
+    background-color: #6eb4f6;
+    position: sticky;
+    left: 370px;
+    top: 5px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        .root {
+            background-color: bisque;
+            display: inline-block;
+            position: relative;
+            padding: 10px 15px;
+            width: 100px;
+            text-align: center;
+        }
+        .root:hover .dropdown {
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            background-color: #f5a6a6;
+            position: absolute;
+            top: 38px;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="root">
+            TV
+            <ul class="dropdown">
+                <li><a href="">Sony</a></li>
+                <li><a href="">Xiaomi</a></li>
+            </ul>
+        </li>
+        <li class="root">
+            Smartphones
+            <ul class="dropdown">
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Samsung</a></li>
+                <li><a href="">Xiaomi</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
