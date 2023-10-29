@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .wrapper {
+            background-color: #c2c2c2;
+            /* overflow: hidden;  */
+        }
+        .wrapper > div {
+            width: 250px;
+            height: 250px;
+            background-color: lavender;
+            float: left;   /*скрывает внешний блок и подложку*/
+        }
+        .wrapper::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .outer{
+            width: 250px;
+            height: 250px;
+            background-color: #ff8de8;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="outer">5</div>
+</body>
+</html>
