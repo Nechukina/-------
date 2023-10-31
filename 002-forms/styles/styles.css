@@ -1,0 +1,45 @@
+.subscription {
+    background-color: rgb(134, 178, 193);
+    width: 80%;
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+.subscription__field {
+    display: flex;
+}
+
+.subscription__field:nth-child(n + 2) {
+    margin-top: 15px;
+}
+
+.subscription__field input {
+    flex-grow: 1;
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    outline: none;
+}
+
+.subscription__field input:focus {
+    border-bottom-color: yellowgreen;
+}
+
+.subscription__field input:invalid {
+    border-bottom-color: red;
+
+}
+
+.subscription__submit {
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    outline: none;
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.5;
+}

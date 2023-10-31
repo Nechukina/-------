@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form basic</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 100px;
+            resize: none; /*отмена возможности менять размеры textarea*/
+            border-radius: 8px;
+            border-color: blue;
+        }
+
+        textarea:focus {
+            border: 2px solid rgb(255, 0, 0);
+            background-color: antiquewhite;
+        }
+        /*цвет на фокусе не работает! почему?*/
+    </style>
+</head>
+
+<body>
+    <form action="sent.html" method="post">
+        <input type="text" placeholder="Your name">
+        <input type="submit" value="Send">
+        <button type="submit">Send btn</button>
+    </form>
+
+    <br>
+    <br>
+
+    <form action="#" method="get" autocomplete="off">
+        <input type="text" name="name" placeholder="Name">
+        <br>
+        <input type="password" name="pass" placeholder="password">
+        <input type="submit" value="OK">
+    </form>
+
+    <br>
+
+    <input type="checkbox" id="condition" name="condition" checked>
+    <label for="condition">i accept!</label>
+
+    <br>
+    <br>
+
+    <input type="radio" name="option" value="JS" id="js">
+    <label for="js">Java Script</label>
+    <label>
+        <input type="radio" name="option" value="PHP" id="php">PHP
+    </label>
+    <label>
+        <input type="radio" name="option" value="PYTHON" id="python">Python
+    </label>
+
+    <br>
+    <br>
+
+    <select name="select" id="select">
+        <option value="value1">Значение 1</option>
+        <option value="value2" selected>Значение 2</option>
+        <option value="value3">Значение 3</option>
+    </select>
+
+    <br>
+    <br>
+
+
+    <!-- в атрибутах можно записать minlength, maxlength, задать размеры cols="30" rows="5" 
+    но лучше использовать стилизацию-->
+    <textarea name="textarea" > Write something here...</textarea>
+
+</body>
+
+</html>

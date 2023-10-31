@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+    <style>
+        progress, meter {
+            display: block;
+            margin: 20px;
+        }
+
+        .progress-container {
+            width: 300px;
+            height: 10px;
+            background-color: grey;
+            border-radius: 5px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .progress-content {
+            height: 100%;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <form
+    oninput="result.value=myRange.value">
+    <input type="range" name="myRange" id="myRange" step="1" min="0" max="10" value="0">
+    
+    <output name="result" for="myRange">0</output>
+
+    <!-- значения тега указывается для старых браузеров -->
+    <progress name="result2" for="myRange" max="10" value="7">0</progress>
+    <meter min="0" max="100" low="33" high="66" optimum="80" value="50">50/100</meter>
+    
+    <!-- оптимально использовать такой вариант -->
+    <div class="progress-container">
+        <div class="progress-content" style="width: 55%"></div>
+    </div>
+    </form>
+</body>
+</html>
