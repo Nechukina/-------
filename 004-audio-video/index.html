@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audio & Video</title>
+</head>
+
+<body>
+    <iframe class="youtube" src="https://www.youtube.com/embed/NErrGZ64OdE?list=PL6DxKON1uLOGtX2_vuBk-Z5Fzbm-DY0y1"
+        title="Алгоритмы и структуры данных ПОЛНЫЙ КУРС на JAVASCRIPT"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d2217.179579369854!2d38.98158396276168!3d56.240409004217184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e2!4m3!3m2!1d56.238928599999994!2d38.9783085!4m3!3m2!1d56.242255099999994!2d38.990131999999996!5e0!3m2!1sru!2sru!4v1698872565407!5m2!1sru!2sru" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <audio src="./media/2543.wav" controls></audio>
+
+    <audio controls>
+        <source src="./media/2543.mp3" type="audio/mpeg" />
+        <source src="./media/2543.ogg" type="audio/ogg; codecs=vorbis">
+        Тег audio не поддерживается вашим браузером. 
+    <a href="./media/2543.mp3">Скачайте музыку</a>.
+    </audio>
+
+    <video 
+    class="video" 
+    src="./media/video.mp4" 
+    poster="./media/bunny.jpg"
+    controls>
+<!-- разные форматы видео для разных браузеров смотрим в htmlbook и подключпем через source -->
+    </video>
+</body>
+
+</html>

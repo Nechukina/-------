@@ -1,0 +1,6 @@
+.youtube, .video {
+    width: 1280px;
+    height: 720px;
+    border: 0;
+    max-width: 100%;
+}
