@@ -1,0 +1,38 @@
+.cloud {
+    /* transition: 1s;  относится к duration */
+
+    /* записи идентичны*/
+
+     /* transition: filter 1s ease-in-out; */
+
+     /* transition-duration: 1s;
+     transition-property: filter;
+     transition-timing-function: ease-in-out; */
+     /* filter: none;  */
+
+    transition: all 1s ease-in-out;
+    transform: perspective(300px);
+    /*если использовать scale в родительском элементе, то трансформация НЕ ломает верстку*/
+    /* transform-origin: bottom left; */
+    /* perspective-origin: right;??? */
+}
+
+img:hover {
+    /* filter: sepia(1); */
+    /* transform: rotate(45deg); */
+    /* transform: scaleX(0.8); */
+    /* transform: skewX(-15deg); */
+    /* transform: translate(50px, 50px); */
+    /* transform: translateX(25%); */
+    transform: perspective(300px) rotateY(45deg);
+
+}
+
+/* спозицонировать элемент по центру */
+.tree {
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
