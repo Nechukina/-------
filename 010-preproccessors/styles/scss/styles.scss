@@ -1,5 +1,7 @@
-@import "./_normalize";
-@import "./__vars";
+@import "./normalize";
+@import "./vars";
+@import "./classes";
+@import "./mixins";
 
 .cube {
     width: 100px;
@@ -16,7 +18,7 @@ a {
         color: $linkHoverColor;
     }
 
-    & > span {
+    &>span {
         border: 1px solid gray;
         padding: 5px 5px;
     }
@@ -24,9 +26,11 @@ a {
 
 .product {
     margin: 0 auto;
+
     &__name {
         font-size: 2rem;
     }
+
     &__price {
         font-size: 1.5rem;
     }
@@ -43,5 +47,44 @@ button {
 
     &:hover {
         color: lighten($linkHoverColor, 50%);
+    }
+}
+
+
+.block1 {
+    @extend %flex-center;
+    background-color: aliceblue;
+}
+
+.block2 {
+    @extend %flex-center;
+    @extend button;
+    background-color: antiquewhite;
+}
+
+h1 {
+    @include title(2rem, 700, 3rem);
+
+    @include media($tablet) {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    @include media($desktop) {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}
+
+h2 {
+    @include title($_size: 5rem, $_weight:400, $_mt: 1.5rem);
+    
+    @include respondTo(768px, 992px) {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    @include respondTo(993px, 1024px) {
+        font-size: 3.2rem;
     }
 }
