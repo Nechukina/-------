@@ -1,0 +1,47 @@
+@import "./_normalize";
+@import "./__vars";
+
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(47, 193, 198);
+    margin: 5px;
+}
+
+a {
+    color: $linkColor;
+    font-size: 1rem;
+
+    &:hover {
+        color: $linkHoverColor;
+    }
+
+    & > span {
+        border: 1px solid gray;
+        padding: 5px 5px;
+    }
+}
+
+.product {
+    margin: 0 auto;
+    &__name {
+        font-size: 2rem;
+    }
+    &__price {
+        font-size: 1.5rem;
+    }
+}
+
+h1 {
+    font-size: $h1Size;
+}
+
+button {
+    // color: lighten($linkColor, 50%);
+    color: darken($linkColor, 10%);
+    background-color: transparentize($linkColor, $amount: 0.5);
+
+    &:hover {
+        color: lighten($linkHoverColor, 50%);
+    }
+}
