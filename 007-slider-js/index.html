@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>JS slider</title>
+</head>
+<body>
+    <h1>JS slider</h1>
+    <div class="slider">
+        <div class="slider__container">
+            <img src="./img/cloud.png" alt="slide picture cloud" class="slider__image flip">
+        </div>
+        <div class="slider__controls">
+            <div class="slider__dots">
+                <span class="slider__dot active" onclick="changeIndex(0)"></span>
+                <span class="slider__dot" onclick="changeIndex(1)"></span>
+                <span class="slider__dot" onclick="changeIndex(2)"></span>
+            </div>
+            <button class="slider__nav slider__nav-left" onclick="nextIndex(-1)">&lt;</button>
+            <button class="slider__nav slider__nav-right" onclick="nextIndex(1)">&gt;</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
